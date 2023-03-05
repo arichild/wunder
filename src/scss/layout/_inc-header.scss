@@ -1,0 +1,35 @@
+.header {
+    padding: 35px 0px;
+    // margin-bottom: 20px;
+    gap: 40px;
+     @media(max-width:998px) {
+            padding: 0;
+            height: 60px;
+        }
+    &-link {
+        text-transform: uppercase;
+        border-bottom: 1px solid $linkColor;
+        transition: 0.3s ease;
+        height: fit-content;
+         @media(max-width:400px) {
+                font-size: rem(14);
+            }
+             @media(max-width:360px) {
+                    text-align: right;
+                }
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../images/bg/mainbg.png);
+    background-repeat: repeat;
+    background-size: contain;
+    z-index: 99;
+}
